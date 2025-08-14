@@ -4,116 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Franky Laurentis - CV</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body { background-color: #f8f9fa; font-family: Arial, sans-serif; }
-    h1, h2, h3 { color: #003366; }
-    .section { padding: 40px 0; }
-    .contact a { text-decoration: none; color: #0d6efd; }
-    .contact p { margin-bottom: 5px; }
-    .job-title { font-weight: bold; }
-    .date { color: #666; font-size: 0.9rem; }
-    ul { margin-top: 10px; }
-    footer { background: #003366; color: white; padding: 15px 0; text-align: center; }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header>
+    <h1>Franky Laurentis</h1>
+    <p>
+      <a href="https://linkedin.com/in/franky-l-77b9b7119" target="_blank">LinkedIn</a> |
+      <a href="https://frankylau5.wordpress.com" target="_blank">Website</a>
+    </p>
+  </header>
 
-<!-- Header -->
-<div class="container text-center my-4">
-  <h1>Franky Laurentis</h1>
-  <div class="contact">
-    <p>🔗 <a href="https://linkedin.com/in/franky-l-77b9b7119" target="_blank">LinkedIn</a> |
-       🌐 <a href="https://frankylau5.wordpress.com" target="_blank">Website</a></p>
-  </div>
-</div>
+  <section>
+    <h2>CV Summary</h2>
+    <p>
+      Electrical Engineer with strong experience in PCB design, IoT product development, embedded systems, and mechanical prototyping. Proven track record in end-to-end product development, including 3D printing, sensor integration, and enclosure design. Interests in AI, robotics, and smart systems including autonomous mobile robots and sensor-driven embedded platforms.
+    </p>
+  </section>
 
-<!-- Summary -->
-<div class="container section">
-  <h2>Summary</h2>
-  <p>Electrical Engineer with strong experience in PCB design, IoT product development, embedded systems, and mechanical prototyping. Proven track record in end-to-end product development, including 3D printing, sensor integration, and enclosure design. Interests in AI, robotics, and smart systems including autonomous mobile robots and sensor-driven embedded platforms.</p>
-</div>
-
-<!-- Work Experience -->
-<div class="container section">
-  <h2>Work Experience</h2>
-
-  <div>
-    <p class="job-title">Development Engineer – Nanyang Polytechnic (COIe)</p>
-    <p class="date">Dec 2024 – Present</p>
+  <section>
+    <h2>Work Experience</h2>
+    <h3>Nanyang Polytechnic (COIe) – Development Engineer</h3>
+    <p><em>Dec 2024 – Present</em></p>
     <ul>
-      <li>Supported prototyping and testing of smart kitchen devices including weight scale, thermometer, and scraper spoon.</li>
-      <li>Designed and 3D printed initial enclosures; collaborated with mechanical engineers to refine enclosure design for hardware integration.</li>
+      <li>Supported prototyping and testing of smart kitchen devices...</li>
+      <li>Designed and 3D printed initial enclosures; collaborated with mechanical engineers to refine enclosure design.</li>
     </ul>
-  </div>
 
-  <div>
-    <p class="job-title">Research Engineer (IoT/EE) – Singapore Institute of Technology</p>
-    <p class="date">Feb 2022 – Nov 2024</p>
+    <h3>Singapore Institute of Technology (SIT) – Research Engineer (IoT/EE)</h3>
+    <p><em>Feb 2022 – Nov 2024</em></p>
     <ul>
-      <li>Led electrical and embedded design for tunnel vacuum unit and dust sensor system; integrated Wi-Fi / 4G telemetry.</li>
-      <li>Designed PCBs, implemented MODBUS control, developed Node-RED dashboards, and rewrote ESP32 firmware.</li>
-      <li>Re-engineered inclinometer for underground deployment; built prototypes with servo PID control.</li>
-      <li>Mentored 6 FYP students on UI and Android development.</li>
+      <li>Led electrical and embedded design for tunnel vacuum unit and custom dust sensor...</li>
+      <li>Developed Node-RED dashboard and rewrote SONOFF ESP32 firmware.</li>
     </ul>
-  </div>
 
-  <div>
-    <p class="job-title">Robotics Software & Electrical Engineer – Solustar Pte. Ltd.</p>
-    <p class="date">Feb 2021 – Jan 2022</p>
+    <!-- Add other jobs here -->
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p><strong>M.Sc. in Mechanical Engineering</strong>, National University of Singapore (2023–2025) | GPA: 4.30/5.00</p>
+    <p><strong>B.Eng. in Electrical Engineering (Honours)</strong>, National University of Singapore (2015–2019) | GPA: 4.33/5.00</p>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
     <ul>
-      <li>Developed ROS-based systems for autonomous human interaction and safety.</li>
-      <li>Integrated touch, vibration, and vision sensors; implemented YOLOv3 human detection.</li>
-      <li>Designed custom PCBs for control and sensor systems.</li>
+      <li><strong>Embedded Systems:</strong> ESP32, SAMD21, ATmega2560, Teensy 3.2/4.0</li>
+      <li><strong>Programming:</strong> Python, C, C++, VBA, JavaScript, Node-RED</li>
+      <li><strong>Tools:</strong> Altium, KiCad, Arduino IDE, MATLAB, ROS, GitHub</li>
     </ul>
-  </div>
+  </section>
 
-  <div>
-    <p class="job-title">Project Engineer – Excel Marco Industrial Systems</p>
-    <p class="date">Oct 2019 – Apr 2020</p>
-    <ul>
-      <li>Developed HMI UI for FPSO systems and automated workflows with Excel VBA.</li>
-    </ul>
-  </div>
-
-  <div>
-    <p class="job-title">NPI Production Intern – Xilinx Inc.</p>
-    <p class="date">Jul 2017 – Dec 2017</p>
-    <ul>
-      <li>Automated test data processing, reducing manual review time by 95%.</li>
-    </ul>
-  </div>
-</div>
-
-<!-- Education -->
-<div class="container section">
-  <h2>Education</h2>
-  <p><strong>M.Sc. in Mechanical Engineering</strong> – National University of Singapore (2023–2025) | GPA: 4.30/5.00</p>
-  <p><strong>B.Eng. in Electrical Engineering (Honours)</strong> – National University of Singapore (2015–2019) | GPA: 4.33/5.00</p>
-</div>
-
-<!-- Skills -->
-<div class="container section">
-  <h2>Technical Skills</h2>
-  <ul>
-    <li><strong>Embedded Systems:</strong> ESP32, SAMD21, ATmega2560, Teensy</li>
-    <li><strong>Communication:</strong> UART, I2C, SPI, Modbus, BLE, MQTT</li>
-    <li><strong>Programming:</strong> Python, C, C++, VBA, JavaScript, Node-RED</li>
-    <li><strong>Tools:</strong> Arduino IDE, MATLAB, ROS, GitHub, 3D Printing</li>
-    <li><strong>Web Dev:</strong> HTML, CSS, React, Bootstrap</li>
-  </ul>
-</div>
-
-<!-- Languages -->
-<div class="container section">
-  <h2>Languages</h2>
-  <p>English, Mandarin, Bahasa Indonesia, Japanese (Beginner)</p>
-</div>
-
-<!-- Footer -->
-<footer>
-  <p>© 2025 Franky Laurentis</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 Franky Laurentis</p>
+  </footer>
 </body>
 </html>
