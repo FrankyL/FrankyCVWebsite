@@ -9,310 +9,326 @@
 </head>
 <body>
 
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+    </svg>
+    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+      <path d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"/>
+    </svg>
+  </button>
   
-	<header>
-	  <h1>Franky Laurentis</h1>
+	  	<header>
+	  <div class="ascii-art">
+	    <pre>╔══════════════════════════════════════════════════════════════╗
+║                    FRANKY LAURENTIS                    ║
+║              ELECTRICAL ENGINEER & IOT DEVELOPER       ║
+╚══════════════════════════════════════════════════════════════╝</pre>
+	  </div>
 	  <div class="social-buttons">
-		<a href="https://linkedin.com/in/franky-l-77b9b7119" target="_blank" class="btn linkedin">LinkedIn</a>
-		<a href="https://frankylau5.wordpress.com" target="_blank" class="btn wordpress">Wordpress Blog</a>
+		<a href="https://linkedin.com/in/franky-l-77b9b7119" target="_blank" class="btn linkedin">LINKEDIN</a>
+		<a href="https://frankylau5.wordpress.com" target="_blank" class="btn wordpress">BLOG</a>
 	  </div>
 	</header>
 
-  <section class="summary-section">
-  <div class="summary-text">
-    <h2>CV Summary</h2>
-    <p>
-      Electrical Engineer with strong experience in PCB design, IoT product development, embedded systems, and mechanical prototyping.
-      Proven track record in end-to-end product development, including 3D printing, sensor integration, and enclosure design.
-      Interests in AI, robotics, and smart systems including autonomous mobile robots and sensor-driven embedded platforms.
-    </p>
-  </div>
-  <div class="summary-image">
-    <img src="images/animated-soldering.png" alt="Animated Soldering APNG">
-  </div>
-</section>
-  
-<section>
-  <h2>Work Experience</h2>
+  <div class="container">
+    <section class="summary-section">
+      <div class="summary-text">
+        <h2>CV SUMMARY</h2>
+        <p>
+          Electrical Engineer with strong experience in PCB design, IoT product development, embedded systems, and mechanical prototyping.
+          Proven track record in end-to-end product development, including 3D printing, sensor integration, and enclosure design.
+          Interests in AI, robotics, and smart systems including autonomous mobile robots and sensor-driven embedded platforms.
+        </p>
+      </div>
+      <div class="summary-image">
+        <img src="images/animated-soldering.png" alt="Animated Soldering APNG">
+      </div>
+    </section>
+    
+    <section>
+      <h2>WORK EXPERIENCE</h2>
 
-  <div class="job">
-    <div class="collapsible">
-      <h3>Nanyang Polytechnic (COIe) – Development Engineer</h3>
-      <span class="toggle-symbol">+</span>
-    </div>
-    <div class="content">
-      <p><strong>Dec 2024 – Present</strong></p>
-      <ul>
-        <li>Supported prototyping and testing of smart kitchen devices including weight scale, thermometer, and scraper spoon.</li>
-        <li>Designed and 3D printed initial enclosures; collaborated with mechanical engineers to refine enclosure design for hardware integration.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="job">
-    <div class="collapsible">
-      <h3>Singapore Institute of Technology (SIT) – Research Engineer (IoT/EE)</h3>
-      <span class="toggle-symbol">+</span>
-    </div>
-    <div class="content">
-      <p><strong>Feb 2022 – Nov 2024</strong></p>
-      <ul>
-        <li>Project 1 – SBS Transit / SMRT Tunnel Dust Scrubber & Sensor System:
+      <div class="job">
+        <div class="collapsible">
+          <h3>Nanyang Polytechnic (COIe) – Development Engineer</h3>
+          <span class="toggle-symbol">+</span>
+        </div>
+        <div class="content">
+          <p><strong>Dec 2024 – Present</strong></p>
           <ul>
-            <li>Led electrical and embedded design for tunnel vacuum unit and custom dust sensor.</li>
-            <li>Designed and fabricated PCBs using Teensy/SAMD21; implemented MODBUS control (Arduino MKR1010) and integrated Wi-Fi / 4G telemetry.</li>
-            <li>Developed Node-RED dashboard and rewrote SONOFF ESP32 firmware.</li>
-            <li>Created and tested mechanical fixtures via 3D printing; validated airflow and smoke chamber performance.</li>
+            <li>Supported prototyping and testing of smart kitchen devices including weight scale, thermometer, and scraper spoon.</li>
+            <li>Designed and 3D printed initial enclosures; collaborated with mechanical engineers to refine enclosure design for hardware integration.</li>
           </ul>
-        </li>
-        <li>Project 2 – WOHHUP Kingpost Orientation Sensor:
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="collapsible">
+          <h3>Singapore Institute of Technology (SIT) – Research Engineer (IoT/EE)</h3>
+          <span class="toggle-symbol">+</span>
+        </div>
+        <div class="content">
+          <p><strong>Feb 2022 – Nov 2024</strong></p>
           <ul>
-            <li>Re-engineered inclinometer sensor for underground deployment in bentonite slurry.</li>
-            <li>Designed waterproof mechanical enclosures and quick-disconnect wire interfaces.</li>
-            <li>Built Kingpost prototype with roll/pitch actuation; implemented servo PID control.</li>
-            <li>Mentored 6 FYP students on UI app and Android development for sensor display.</li>
+            <li>Project 1 – SBS Transit / SMRT Tunnel Dust Scrubber & Sensor System:
+              <ul>
+                <li>Led electrical and embedded design for tunnel vacuum unit and custom dust sensor.</li>
+                <li>Designed and fabricated PCBs using Teensy/SAMD21; implemented MODBUS control (Arduino MKR1010) and integrated Wi-Fi / 4G telemetry.</li>
+                <li>Developed Node-RED dashboard and rewrote SONOFF ESP32 firmware.</li>
+                <li>Created and tested mechanical fixtures via 3D printing; validated airflow and smoke chamber performance.</li>
+              </ul>
+            </li>
+            <li>Project 2 – WOHHUP Kingpost Orientation Sensor:
+              <ul>
+                <li>Re-engineered inclinometer sensor for underground deployment in bentonite slurry.</li>
+                <li>Designed waterproof mechanical enclosures and quick-disconnect wire interfaces.</li>
+                <li>Built Kingpost prototype with roll/pitch actuation; implemented servo PID control.</li>
+                <li>Mentored 6 FYP students on UI app and Android development for sensor display.</li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
+        </div>
+      </div>
 
-  <div class="job">
-    <div class="collapsible">
-      <h3>Solustar Pte. Ltd. – Robotics Software & Electrical Engineer</h3>
-      <span class="toggle-symbol">+</span>
-    </div>
-    <div class="content">
-      <p><strong>Feb 2021 – Jan 2022</strong></p>
-      <ul>
-        <li>Developed ROS-based systems for autonomous human interaction and safety on the Solustar Disinfection Robot (SDR).</li>
-        <li>Integrated capacitive touch and vibration sensors with speech response features to enhance human-robot interaction.</li>
-        <li>Implemented YOLOv3-based human detection using Intel Realsense camera input via ROSPy; added fallback using thermal sensor.</li>
-        <li>Created ROSPy scripts for system status monitoring and implemented redundancy for sensors and cameras.</li>
-        <li>Designed custom PCBs (ATMega2560/Arduino Mega) for motor, LED, servo, and thermal sensor control.</li>
-        <li>Built map-editing front-end features to define No-Go Zones and update global map for navigation.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="job">
-    <div class="collapsible">
-      <h3>Excel Marco Industrial Systems Pte. Ltd. – Project Engineer</h3>
-      <span class="toggle-symbol">+</span>
-    </div>
-    <div class="content">
-      <p><strong>Oct 2019 – Apr 2020</strong></p>
-      <ul>
-        <li>Developed HMI UI for FPSO systems, automated workflows with Excel VBA.</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="job">
-    <div class="collapsible">
-      <h3>Xilinx Inc. – NPI Production Intern</h3>
-      <span class="toggle-symbol">+</span>
-    </div>
-    <div class="content">
-      <p><strong>Jul 2017 – Dec 2017</strong></p>
-      <ul>
-        <li>Automated test data processing with Perl/VBA; reduced manual review time by 95%.</li>
-      </ul>
-    </div>
-  </div>
-
-</section>
-
-
-<section>
-  <h2>Education</h2>
-
-  <div class="job">
-    <div class="collapsible">
-      <h3>National University of Singapore – M.Sc. Mechanical Engineering (2023–2025)</h3>
-      <span class="toggle-symbol">+</span>
-    </div>
-    <div class="content">
-      <ul>
-        <li>GPA 4.30/5.00</li>
-        <li>Robotics & Controls: Linear Systems, Machine Vision, Neural Networks, Soft Robotics, Reinforcement Learning for robotics
+      <div class="job">
+        <div class="collapsible">
+          <h3>Solustar Pte. Ltd. – Robotics Software & Electrical Engineer</h3>
+          <span class="toggle-symbol">+</span>
+        </div>
+        <div class="content">
+          <p><strong>Feb 2021 – Jan 2022</strong></p>
           <ul>
-            <li>Relevant topics/projects: Multi-layer Perceptron, SVM, RBFN, CNNs, MDP, Q-Learning, SARSA, DQN</li>
-            <li>Projects & reports: simulating / 3D printing TPU compliant gripper, applying 1st-visit Monte Carlo, SARSA, and Q-learning to solve mazes, MPPI drone obstacle avoidance</li>
+            <li>Developed ROS-based systems for autonomous human interaction and safety on the Solustar Disinfection Robot (SDR).</li>
+            <li>Integrated capacitive touch and vibration sensors with speech response features to enhance human-robot interaction.</li>
+            <li>Implemented YOLOv3-based human detection using Intel Realsense camera input via ROSPy; added fallback using thermal sensor.</li>
+            <li>Created ROSPy scripts for system status monitoring and implemented redundancy for sensors and cameras.</li>
+            <li>Designed custom PCBs (ATMega2560/Arduino Mega) for motor, LED, servo, and thermal sensor control.</li>
+            <li>Built map-editing front-end features to define No-Go Zones and update global map for navigation.</li>
           </ul>
-        </li>
-        <li>Material Science & Sustainability: Bio-inspired design & biomaterials, Engineering materials in medicine, Additive & non-conventional manufacturing, Sustainability, Corrosion
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="collapsible">
+          <h3>Excel Marco Industrial Systems Pte. Ltd. – Project Engineer</h3>
+          <span class="toggle-symbol">+</span>
+        </div>
+        <div class="content">
+          <p><strong>Oct 2019 – Apr 2020</strong></p>
           <ul>
-            <li>Projects & reports: Selenium nanomaterials, stroke-related materials, 3D printing soft materials, sustainability analysis and redesign of low-cost hair dryer</li>
+            <li>Developed HMI UI for FPSO systems, automated workflows with Excel VBA.</li>
           </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
+        </div>
+      </div>
 
-  <div class="job">
-    <div class="collapsible">
-      <h3>National University of Singapore – B.Eng. Electrical Engineering (2015–2019)</h3>
-      <span class="toggle-symbol">+</span>
-    </div>
-    <div class="content">
-      <ul>
-        <li>GPA 4.33/5.00 (Distinction)</li>
-        <li>Industrial track: Control, Intelligent Systems and Robotics
+      <div class="job">
+        <div class="collapsible">
+          <h3>Xilinx Inc. – NPI Production Intern</h3>
+          <span class="toggle-symbol">+</span>
+        </div>
+        <div class="content">
+          <p><strong>Jul 2017 – Dec 2017</strong></p>
           <ul>
-            <li>IoT FYP under Prof. Hari K. Garg: Designed and built 2 smart extension socket prototypes as proof of concepts</li>
-            <li>Installed microcontrollers, Wi-Fi, and ammeter modules into 3D-printed extension sockets to manage power usage & remote control via Python UI</li>
-            <li>Implemented MQTT protocol for Socket-Windows communication and I2C for intra-socket communication (2nd prototype modular/plug-and-play)</li>
+            <li>Automated test data processing with Perl/VBA; reduced manual review time by 95%.</li>
           </ul>
-        </li>
-        <li>Student Exchange Programme (SEP) – Tokyo Institute of Technology
+        </div>
+      </div>
+
+    </section>
+
+
+    <section>
+      <h2>EDUCATION</h2>
+
+      <div class="job">
+        <div class="collapsible">
+          <h3>National University of Singapore – M.Sc. Mechanical Engineering (2023–2025)</h3>
+          <span class="toggle-symbol">+</span>
+        </div>
+        <div class="content">
           <ul>
-            <li>Under Prof. Masayuki Fujita’s lab: implemented VR control scheme in Unity and ROS to manipulate robot swarm</li>
+            <li>GPA 4.30/5.00</li>
+            <li>Robotics & Controls: Linear Systems, Machine Vision, Neural Networks, Soft Robotics, Reinforcement Learning for robotics
+              <ul>
+                <li>Relevant topics/projects: Multi-layer Perceptron, SVM, RBFN, CNNs, MDP, Q-Learning, SARSA, DQN</li>
+                <li>Projects & reports: simulating / 3D printing TPU compliant gripper, applying 1st-visit Monte Carlo, SARSA, and Q-learning to solve mazes, MPPI drone obstacle avoidance</li>
+              </ul>
+            </li>
+            <li>Material Science & Sustainability: Bio-inspired design & biomaterials, Engineering materials in medicine, Additive & non-conventional manufacturing, Sustainability, Corrosion
+              <ul>
+                <li>Projects & reports: Selenium nanomaterials, stroke-related materials, 3D printing soft materials, sustainability analysis and redesign of low-cost hair dryer</li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="collapsible">
+          <h3>National University of Singapore – B.Eng. Electrical Engineering (2015–2019)</h3>
+          <span class="toggle-symbol">+</span>
+        </div>
+        <div class="content">
+          <ul>
+            <li>GPA 4.33/5.00 (Distinction)</li>
+            <li>Industrial track: Control, Intelligent Systems and Robotics
+              <ul>
+                <li>IoT FYP under Prof. Hari K. Garg: Designed and built 2 smart extension socket prototypes as proof of concepts</li>
+                <li>Installed microcontrollers, Wi-Fi, and ammeter modules into 3D-printed extension sockets to manage power usage & remote control via Python UI</li>
+                <li>Implemented MQTT protocol for Socket-Windows communication and I2C for intra-socket communication (2nd prototype modular/plug-and-play)</li>
+              </ul>
+            </li>
+            <li>Student Exchange Programme (SEP) – Tokyo Institute of Technology
+              <ul>
+                <li>Under Prof. Masayuki Fujita's lab: implemented VR control scheme in Unity and ROS to manipulate robot swarm</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+
+      <section>
+        <h2>TECHNICAL SKILLS</h2>
+        <ul>
+          <li><strong>Embedded Systems:</strong> ESP32, SAMD21, ATmega2560, Teensy 3.2/4.0</li>
+          <li><strong>Programming:</strong> Python, C, C++, VBA, JavaScript, Node-RED</li>
+          <li><strong>Tools:</strong> Altium, KiCad, Arduino IDE, MATLAB, ROS, GitHub</li>
+        </ul>
+      </section>
+      
+      
+      <section>
+      
+        <h2 class="project-title">
+    	  PERSONAL PROJECTS:
+    		<a href="https://frankylau5.wordpress.com/" target="_blank">
+    		  More on my Wordpress
+    		</a>
+    	  
+    	  <img src="images/animated-3dprinting.png" alt="Project APNG" class="apng-icon">
+    	</h2>
+    	
+    	  <div class="job">
+    	  <div class="collapsible">
+    		<h3>
+    		
+    			<a href="https://frankylau5.wordpress.com/2025/03/26/drone-carried-water-sampling-and-filtration-system-prototype/" target="_blank">
+    			  Drone Carried Water Filtering System Prototype
+    			</a>
+    		</h3>
+    		<span class="toggle-symbol">+</span>
+    	  </div>
+    	  <div class="content">
+    		<ul>
+    		  <li>Hand-soldered PCB and programmed ESP32 (Arduino framework) to control peristaltic pump, water flow sensor, water level sensor, and pressure sensor.</li>
+    		  <li>Implemented PID control to regulate water flow speed through the system.</li>
+    		  <li>System detects contact with water, activates pump to collect sample, and filters using Sterivex filter.</li>
+    		</ul>
+    	  </div>
+    	</div>
+
+    	<div class="job">
+    	  <div class="collapsible">
+    		<h3>
+    		
+    			<a href="https://frankylau5.wordpress.com/2025/03/14/internet-controlled-claw-machine-prototype/" target="_blank">
+    			  Internet-Controlled Claw Machine Prototype (Electronics)
+    			</a>
+    		</h3>
+    		<span class="toggle-symbol">+</span>
+    	  </div>
+    	  <div class="content">
+    		<ul>
+    		  <li>Designed prototype PCB with ESP32 controlling 3 NEMA17 stepper motors, 5 limit switches, and relay for claw mechanism.</li>
+    		  <li>Developed control via Raspberry Pi using both Gamepad-Python-ESP32 and NodeRED GUI-ESP32 methods.</li>
+    		  <li>Simulated full claw machine sequence including claw drop and movement patterns.</li>
+    		</ul>
+    	  </div>
+    	</div>
+
+    	<div class="job">
+    	  <div class="collapsible">
+    		<h3>Smart Web-Controlled Power Meter Prototype</h3>
+    		<span class="toggle-symbol">+</span>
+    	  </div>
+    	  <div class="content">
+    		<ul>
+    		  <li>Built prototype PCB and 3D-printed casing integrating ESP32 and Arduino Uno.</li>
+    		  <li>ESP32 ran Telegram bot interface; Arduino handled device operations.</li>
+    		  <li>Features included I2C LCD1602 display, relay, ACS712 ammeter, limit switch, and digital power meter.</li>
+    		  <li>Power usage allowed only after "charging" value set via Telegram; ACS712 measured consumption based on 230V AC assumption.</li>
+    		</ul>
+    	  </div>
+    	</div>
+
+    	<div class="job">
+    	  <div class="collapsible">
+    		<h3>
+    			<a href="https://frankylau5.wordpress.com/2024/11/25/smart-wall-switch-1-gangway-3-gangway-variants/" target="_blank">
+    			  Smart Wall Switch (1-Gang & 3-Gang Variants)
+    			</a>
+    		</h3>
+    		<span class="toggle-symbol">+</span>
+    	  </div>
+    	  <div class="content">
+    		<ul>
+    		  <li>Manufactured PCB through JLCPCB and 3D-printed casing.</li>
+    		  <li>Integrated RGB LED for adjustable night light, ESP32 for MQTT control, and relay for lighting.</li>
+    		</ul>
+    	  </div>
+    	</div>
+
+    	<div class="job">
+    	  <div class="collapsible">
+    		<h3>
+    		
+    			<a href="https://frankylau5.wordpress.com/2024/11/25/split-ortho-linear-ble-keyboard/" target="_blank">
+    			  Ortho-Linear Split Keyboard	
+    			</a>
+    		</h3>
+    		<span class="toggle-symbol">+</span>
+    	  </div>
+    	  <div class="content">
+    		<ul>
+    		  <li>Designed with ESP32 and multiplexers, 3D-printed casing, and magnetic connectors for modular assembly.</li>
+    		  <li>BLE keystroke transmission to PC; right-hand side ESP32 handled main processing and BLE.</li>
+    		  <li>Left-hand side transmitted keystrokes via I2C to right-hand side for BLE output.</li>
+    		  <li>Powered by lithium AAA batteries.</li>
+    		</ul>
+    	  </div>
+    	</div>
+
+    	<div class="job">
+    	  <div class="collapsible">
+    	    <!-- <h3>BLE Wireless Macro Pad</h3> -->
+    		<h3>
+    			<a href="https://frankylau5.wordpress.com/2025/01/13/12-buttons-esp32-based-macropad-with-hot-swap-sockets-v3-tft-variant/" target="_blank">
+    			  BLE Wireless Macro Pad
+    			</a>
+    		</h3>
+    		<span class="toggle-symbol">+</span>
+    	  </div>
+    	  <div class="content">
+    		<ul>
+    		  <li>Built using ESP32 and a multiplexer with 3D-printed casing.</li>
+    		  <li>Sent programmable keystroke combinations via BLE; stored up to 3 sets of macros.</li>
+    		  <li>Latest version included OLED screens to display icons for assigned functions.</li>
+    		</ul>
+    	  </div>
+    	</div>
+
+      </section>
     </div>
-  </div>
 
-</section>
-
-
-  <section>
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><strong>Embedded Systems:</strong> ESP32, SAMD21, ATmega2560, Teensy 3.2/4.0</li>
-      <li><strong>Programming:</strong> Python, C, C++, VBA, JavaScript, Node-RED</li>
-      <li><strong>Tools:</strong> Altium, KiCad, Arduino IDE, MATLAB, ROS, GitHub</li>
-    </ul>
-  </section>
-  
-  
-  <section>
-  
-    <h2 class="project-title">
-	  Personal Projects (&gt;
-		<a href="https://frankylau5.wordpress.com/" target="_blank">
-		  More on my Wordpress
-		</a>
-	  &lt;)
-	  <img src="images/animated-3dprinting.png" alt="Project APNG" class="apng-icon">
-	</h2>
-	
-	  <div class="job">
-	  <div class="collapsible">
-		<h3>
-		
-			<a href="https://frankylau5.wordpress.com/2025/03/26/drone-carried-water-sampling-and-filtration-system-prototype/" target="_blank">
-			  Drone Carried Water Filtering System Prototype
-			</a>
-		</h3>
-		<span class="toggle-symbol">+</span>
-	  </div>
-	  <div class="content">
-		<ul>
-		  <li>Hand-soldered PCB and programmed ESP32 (Arduino framework) to control peristaltic pump, water flow sensor, water level sensor, and pressure sensor.</li>
-		  <li>Implemented PID control to regulate water flow speed through the system.</li>
-		  <li>System detects contact with water, activates pump to collect sample, and filters using Sterivex filter.</li>
-		</ul>
-	  </div>
-	</div>
-
-	<div class="job">
-	  <div class="collapsible">
-		<h3>
-		
-			<a href="https://frankylau5.wordpress.com/2025/03/14/internet-controlled-claw-machine-prototype/" target="_blank">
-			  Internet-Controlled Claw Machine Prototype (Electronics)
-			</a>
-		</h3>
-		<span class="toggle-symbol">+</span>
-	  </div>
-	  <div class="content">
-		<ul>
-		  <li>Designed prototype PCB with ESP32 controlling 3 NEMA17 stepper motors, 5 limit switches, and relay for claw mechanism.</li>
-		  <li>Developed control via Raspberry Pi using both Gamepad-Python-ESP32 and NodeRED GUI-ESP32 methods.</li>
-		  <li>Simulated full claw machine sequence including claw drop and movement patterns.</li>
-		</ul>
-	  </div>
-	</div>
-
-	<div class="job">
-	  <div class="collapsible">
-		<h3>Smart Web-Controlled Power Meter Prototype</h3>
-		<span class="toggle-symbol">+</span>
-	  </div>
-	  <div class="content">
-		<ul>
-		  <li>Built prototype PCB and 3D-printed casing integrating ESP32 and Arduino Uno.</li>
-		  <li>ESP32 ran Telegram bot interface; Arduino handled device operations.</li>
-		  <li>Features included I2C LCD1602 display, relay, ACS712 ammeter, limit switch, and digital power meter.</li>
-		  <li>Power usage allowed only after “charging” value set via Telegram; ACS712 measured consumption based on 230V AC assumption.</li>
-		</ul>
-	  </div>
-	</div>
-
-	<div class="job">
-	  <div class="collapsible">
-		<h3>
-			<a href="https://frankylau5.wordpress.com/2024/11/25/smart-wall-switch-1-gangway-3-gangway-variants/" target="_blank">
-			  Smart Wall Switch (1-Gang & 3-Gang Variants)
-			</a>
-		</h3>
-		<span class="toggle-symbol">+</span>
-	  </div>
-	  <div class="content">
-		<ul>
-		  <li>Manufactured PCB through JLCPCB and 3D-printed casing.</li>
-		  <li>Integrated RGB LED for adjustable night light, ESP32 for MQTT control, and relay for lighting.</li>
-		</ul>
-	  </div>
-	</div>
-
-	<div class="job">
-	  <div class="collapsible">
-		<h3>
-		
-			<a href="https://frankylau5.wordpress.com/2024/11/25/split-ortho-linear-ble-keyboard/" target="_blank">
-			  Ortho-Linear Split Keyboard	
-			</a>
-		</h3>
-		<span class="toggle-symbol">+</span>
-	  </div>
-	  <div class="content">
-		<ul>
-		  <li>Designed with ESP32 and multiplexers, 3D-printed casing, and magnetic connectors for modular assembly.</li>
-		  <li>BLE keystroke transmission to PC; right-hand side ESP32 handled main processing and BLE.</li>
-		  <li>Left-hand side transmitted keystrokes via I2C to right-hand side for BLE output.</li>
-		  <li>Powered by lithium AAA batteries.</li>
-		</ul>
-	  </div>
-	</div>
-
-	<div class="job">
-	  <div class="collapsible">
-		<!-- <h3>BLE Wireless Macro Pad</h3> -->
-		<h3>
-			<a href="https://frankylau5.wordpress.com/2025/01/13/12-buttons-esp32-based-macropad-with-hot-swap-sockets-v3-tft-variant/" target="_blank">
-			  BLE Wireless Macro Pad
-			</a>
-		</h3>
-		<span class="toggle-symbol">+</span>
-	  </div>
-	  <div class="content">
-		<ul>
-		  <li>Built using ESP32 and a multiplexer with 3D-printed casing.</li>
-		  <li>Sent programmable keystroke combinations via BLE; stored up to 3 sets of macros.</li>
-		  <li>Latest version included OLED screens to display icons for assigned functions.</li>
-		</ul>
-	  </div>
-	</div>
-
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Franky Laurentis</p>
-  </footer>
-  
-  <script src="script.js"></script>
-</body>
-</html>
+      <footer>
+        <p>&copy; 2025 Franky Laurentis</p>
+      </footer>
+      
+      <script src="script.js"></script>
+    </body>
+    </html>
