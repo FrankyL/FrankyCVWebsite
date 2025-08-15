@@ -165,6 +165,7 @@ a:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	flex-wrap: wrap; /* allow wrapping if needed */
 }
 
 .summary-text {
@@ -180,6 +181,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 10px; /* space between text and APNG */
+	flex-wrap: wrap; /* allows image to go to next line if space is tight */
 }
 
 .apng-icon {
@@ -187,13 +189,21 @@ a:hover {
     height: auto;
 }
 
-
-
-@media (max-width: 480px) {
+/* Mobile-friendly stacking */
+@media (max-width: 600px) {
+	
     .project-title {
         flex-direction: column; /* stack text above image on small screens */
         align-items: flex-start;
         gap: 5px;
     }
-}
+	
+    .summary-section {
+        flex-direction: column; /* stack text above image */
+        align-items: flex-start;
+    }
 
+    .summary-image img {
+        max-width: 150px; /* smaller on mobile */
+    }
+}
