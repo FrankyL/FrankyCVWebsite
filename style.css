@@ -186,3 +186,14 @@ a:hover {
     width: 150px; /* adjust size */
     height: auto;
 }
+
+
+
+@media (max-width: 480px) {
+    .project-title {
+        flex-direction: column; /* stack text above image on small screens */
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+
