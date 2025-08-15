@@ -1,14 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".collapsible").forEach(button => {
-        button.addEventListener("click", function () {
-            const content = this.nextElementSibling;
-            content.classList.toggle("open");
+document.querySelectorAll(".collapsible").forEach(button => {
+    const content = button.nextElementSibling;
+    let hideTimeout;
 
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null; // Collapse
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px"; // Expand
-            }
-        });
+    button.addEventListener("mouseenter", function () {
+        clearTimeout(hideTimeout); // cancel any pending close
+        content.classList.add("open");
+        content.style.maxHeight = content.scrollHeight + "px";
+    });
+
+    button.addEventListener("mouseleave", function () {
+        hideTimeout = setTimeout(() => {
+            content.classList.remove("open");
+            content.style.maxHeight = null;
+        }, 200); // wait 2 seconds before closing
     });
 });
+
+
+

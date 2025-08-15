@@ -7,13 +7,15 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Franky Laurentis</h1>
-    <p>
-      <a href="https://linkedin.com/in/franky-l-77b9b7119" target="_blank">LinkedIn</a> |
-      <a href="https://frankylau5.wordpress.com" target="_blank">Website</a>
-    </p>
-  </header>
+
+  
+	<header>
+	  <h1>Franky Laurentis</h1>
+	  <div class="social-buttons">
+		<a href="https://linkedin.com/in/franky-l-77b9b7119" target="_blank" class="btn linkedin">LinkedIn</a>
+		<a href="https://frankylau5.wordpress.com" target="_blank" class="btn wordpress">Wordpress Blog</a>
+	  </div>
+	</header>
 
   <section>
     <h2>CV Summary</h2>
@@ -124,7 +126,7 @@
     </div>
     <div class="content">
       <ul>
-        <li>Master of Science (MSc) in Mechanical Engineering with GPA 4.30/5.00</li>
+        <li>GPA 4.30/5.00</li>
         <li>Robotics & Controls: Linear Systems, Machine Vision, Neural Networks, Soft Robotics, Reinforcement Learning for robotics
           <ul>
             <li>Relevant topics/projects: Multi-layer Perceptron, SVM, RBFN, CNNs, MDP, Q-Learning, SARSA, DQN</li>
@@ -147,7 +149,7 @@
     </div>
     <div class="content">
       <ul>
-        <li>Bachelor of Engineering (Electrical Engineering), Honours with GPA 4.33/5.00 (Distinction)</li>
+        <li>GPA 4.33/5.00 (Distinction)</li>
         <li>Industrial track: Control, Intelligent Systems and Robotics
           <ul>
             <li>IoT FYP under Prof. Hari K. Garg: Designed and built 2 smart extension socket prototypes as proof of concepts</li>
@@ -174,6 +176,126 @@
       <li><strong>Programming:</strong> Python, C, C++, VBA, JavaScript, Node-RED</li>
       <li><strong>Tools:</strong> Altium, KiCad, Arduino IDE, MATLAB, ROS, GitHub</li>
     </ul>
+  </section>
+  
+  
+  <section>
+    <h2>
+	Personal Project (>
+		<a href="https://frankylau5.wordpress.com/" target="_blank">
+		  More on my Wordpress
+		</a>
+	<)
+	</h2>
+	  <div class="job">
+	  <div class="collapsible">
+		<h3>
+		
+			<a href="https://frankylau5.wordpress.com/2025/03/26/drone-carried-water-sampling-and-filtration-system-prototype/" target="_blank">
+			  Drone Carried Water Filtering System Prototype
+			</a>
+		</h3>
+		<span class="toggle-symbol">+</span>
+	  </div>
+	  <div class="content">
+		<ul>
+		  <li>Hand-soldered PCB and programmed ESP32 (Arduino framework) to control peristaltic pump, water flow sensor, water level sensor, and pressure sensor.</li>
+		  <li>Implemented PID control to regulate water flow speed through the system.</li>
+		  <li>System detects contact with water, activates pump to collect sample, and filters using Sterivex filter.</li>
+		</ul>
+	  </div>
+	</div>
+
+	<div class="job">
+	  <div class="collapsible">
+		<h3>
+		
+			<a href="https://frankylau5.wordpress.com/2025/03/14/internet-controlled-claw-machine-prototype/" target="_blank">
+			  Internet-Controlled Claw Machine Prototype (Electronics)
+			</a>
+		</h3>
+		<span class="toggle-symbol">+</span>
+	  </div>
+	  <div class="content">
+		<ul>
+		  <li>Designed prototype PCB with ESP32 controlling 3 NEMA17 stepper motors, 5 limit switches, and relay for claw mechanism.</li>
+		  <li>Developed control via Raspberry Pi using both Gamepad-Python-ESP32 and NodeRED GUI-ESP32 methods.</li>
+		  <li>Simulated full claw machine sequence including claw drop and movement patterns.</li>
+		</ul>
+	  </div>
+	</div>
+
+	<div class="job">
+	  <div class="collapsible">
+		<h3>Smart Web-Controlled Power Meter Prototype</h3>
+		<span class="toggle-symbol">+</span>
+	  </div>
+	  <div class="content">
+		<ul>
+		  <li>Built prototype PCB and 3D-printed casing integrating ESP32 and Arduino Uno.</li>
+		  <li>ESP32 ran Telegram bot interface; Arduino handled device operations.</li>
+		  <li>Features included I2C LCD1602 display, relay, ACS712 ammeter, limit switch, and digital power meter.</li>
+		  <li>Power usage allowed only after “charging” value set via Telegram; ACS712 measured consumption based on 230V AC assumption.</li>
+		</ul>
+	  </div>
+	</div>
+
+	<div class="job">
+	  <div class="collapsible">
+		<h3>
+			<a href="https://frankylau5.wordpress.com/2024/11/25/smart-wall-switch-1-gangway-3-gangway-variants/" target="_blank">
+			  Smart Wall Switch (1-Gang & 3-Gang Variants)
+			</a>
+		</h3>
+		<span class="toggle-symbol">+</span>
+	  </div>
+	  <div class="content">
+		<ul>
+		  <li>Manufactured PCB through JLCPCB and 3D-printed casing.</li>
+		  <li>Integrated RGB LED for adjustable night light, ESP32 for MQTT control, and relay for lighting.</li>
+		</ul>
+	  </div>
+	</div>
+
+	<div class="job">
+	  <div class="collapsible">
+		<h3>
+		
+			<a href="https://frankylau5.wordpress.com/2024/11/25/split-ortho-linear-ble-keyboard/" target="_blank">
+			  Ortho-Linear Split Keyboard	
+			</a>
+		</h3>
+		<span class="toggle-symbol">+</span>
+	  </div>
+	  <div class="content">
+		<ul>
+		  <li>Designed with ESP32 and multiplexers, 3D-printed casing, and magnetic connectors for modular assembly.</li>
+		  <li>BLE keystroke transmission to PC; right-hand side ESP32 handled main processing and BLE.</li>
+		  <li>Left-hand side transmitted keystrokes via I2C to right-hand side for BLE output.</li>
+		  <li>Powered by lithium AAA batteries.</li>
+		</ul>
+	  </div>
+	</div>
+
+	<div class="job">
+	  <div class="collapsible">
+		<!-- <h3>BLE Wireless Macro Pad</h3> -->
+		<h3>
+			<a href="https://frankylau5.wordpress.com/2025/01/13/12-buttons-esp32-based-macropad-with-hot-swap-sockets-v3-tft-variant/" target="_blank">
+			  BLE Wireless Macro Pad
+			</a>
+		</h3>
+		<span class="toggle-symbol">+</span>
+	  </div>
+	  <div class="content">
+		<ul>
+		  <li>Built using ESP32 and a multiplexer with 3D-printed casing.</li>
+		  <li>Sent programmable keystroke combinations via BLE; stored up to 3 sets of macros.</li>
+		  <li>Latest version included OLED screens to display icons for assigned functions.</li>
+		</ul>
+	  </div>
+	</div>
+
   </section>
 
   <footer>

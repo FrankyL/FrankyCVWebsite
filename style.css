@@ -1,10 +1,20 @@
 /* General page styling */
+/* Import from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap');
+
+/* Apply fonts */
+
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #415161;
     margin: 0;
     padding: 0;
     color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -43,13 +53,13 @@ h2 {
 
 /* Links styling */
 a {
-    color: #2980b9;
+    color: #93c9ff; /* Light blue */
     text-decoration: none;
-    transition: color 0.2s ease;
 }
 
 a:hover {
-    color: #1abc9c;
+    color: #82c2ff; /* Slightly darker blue on hover */
+    text-decoration: underline;
 }
 
 /* Fade-in animation */
@@ -108,4 +118,41 @@ a:hover {
 
 .content.open {
     padding: 10px;
+}
+
+.social-buttons {
+  margin-top: 20px;
+}
+
+
+
+.btn {
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin:hover {
+  background-color: #005a86;
+}
+
+.wordpress {
+  background-color: #0077b5;
+}
+
+.wordpress:hover {
+  background-color: #005a86;
 }
