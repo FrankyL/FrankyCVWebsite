@@ -93,7 +93,7 @@ header {
 }
 
 .ascii-art {
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 .ascii-art pre {
@@ -226,6 +226,7 @@ section h2 {
   background: var(--highlight);
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 /* Summary Section */
@@ -306,11 +307,14 @@ section h2 {
 
 .collapsible h3 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-color);
+  text-underline-offset: 3px;
 }
 
 .collapsible h3 a:hover {
   color: var(--accent-color);
+  text-decoration-color: var(--primary-color);
 }
 
 .toggle-symbol {
@@ -372,6 +376,7 @@ section h2 {
 .project-title {
   display: flex;
   align-items: center;
+  justify-content: center; /* add this */
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -397,26 +402,29 @@ section h2 {
 section h2:contains("Technical Skills") + ul,
 section:has(h2:contains("Technical Skills")) ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   padding: 2rem;
   list-style: none;
+  margin: 0 2rem 2rem 2rem;
 }
 
 section h2:contains("Technical Skills") + ul li,
 section:has(h2:contains("Technical Skills")) li {
   background: var(--highlight);
-  padding: 1rem;
+  padding: 1.5rem;
   border: 1px solid var(--border);
   border-radius: 0;
   transition: all 0.2s ease;
   font-size: 0.875rem;
+  cursor: pointer;
 }
 
 section h2:contains("Technical Skills") + ul li:hover,
 section:has(h2:contains("Technical Skills")) li:hover {
   border-color: var(--primary-color);
   background: var(--surface);
+  box-shadow: var(--shadow);
 }
 
 /* Footer */
@@ -505,6 +513,27 @@ a:hover {
   section:has(h2:contains("Technical Skills")) ul {
     grid-template-columns: 1fr;
     padding: 1rem;
+    margin: 0 1rem 1rem 1rem;
+  }
+  
+  section h2:contains("Technical Skills") + ul li,
+  section:has(h2:contains("Technical Skills")) li {
+    padding: 1rem;
+  }
+  
+  .project-title {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .project-title a {
+    order: 1;
+  }
+  
+  .apng-icon {
+    order: 2;
+    margin: 0 auto;
   }
 }
 
